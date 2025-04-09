@@ -18,7 +18,13 @@ class CircleTest {
    */
   @Test
   void testCircleDouble() {
-    fail("Not yet implemented");
+    try {
+      Circle circle1 = new Circle(-10.0);
+    } catch (IllegalArgumentException e) {
+      System.out.println("no negative radiuses!!!");
+    }
+
+
   }
   
   /*
@@ -29,7 +35,11 @@ class CircleTest {
    */
   @Test
   void testScale1() {
-    fail("Not yet implemented");
+
+    Circle circle1 = new Circle(1.5);
+    circle1.scale(2.0);
+    assertEquals(3.0, circle1.getDimension());
+
   }
 
   /*
@@ -38,7 +48,10 @@ class CircleTest {
    */
   @Test
   void testArea1() {
-    fail("Not yet implemented");
+
+    Circle circle2 =  new Circle(1.0);
+    assertEquals(Math.PI, circle2.area());
+
   }
 
   /*
@@ -47,7 +60,10 @@ class CircleTest {
    */
   @Test
   void testArea2() {
-    fail("Not yet implemented");
+
+    Circle circle3 = new Circle(2.0);
+    assertEquals(4.0 * Math.PI, circle3.area());
+
   }
 
 
@@ -57,7 +73,10 @@ class CircleTest {
    */
   @Test
   void testGetRadius1() {
-    fail("Not yet implemented");
+
+    Circle circle4 = new Circle(1.0);
+    assertEquals(1.0, circle4.getDimension());
+
   }
 
 }
