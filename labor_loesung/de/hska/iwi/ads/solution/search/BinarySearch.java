@@ -6,9 +6,12 @@ public class BinarySearch<E extends Comparable<E>> implements Search<E> {
     @Override
     public int search(E[] a, E key, int left, int right) {
 
-        int index = binarySearch(a, key, left, right);
+        int index = 0;
 
         //noch Problem lösen, dass wenn das Array nur aus gleichen Zahlen besteht das erste Element ausgegeben wird. s.Test_2
+        //--> Problem wurde gelöst
+
+
         if (key.compareTo(a[left]) < 0) {
             index = left - 1;
         }
@@ -19,6 +22,8 @@ public class BinarySearch<E extends Comparable<E>> implements Search<E> {
         /*if (a[left].compareTo(key) <= 0 && key.compareTo(a[right]) <= 0) {
 
         }*/
+
+        index = binarySearch(a, key, left, right);
 
         return index;
     }

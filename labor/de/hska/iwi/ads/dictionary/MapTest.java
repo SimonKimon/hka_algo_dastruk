@@ -62,7 +62,7 @@ public abstract class MapTest {
   void testSize1() {
     Map<Integer, String> dictionary = createMap();
     
-    dictionary.put(5, "Fünf");
+    dictionary.put(5, "Fuenf");
     dictionary.put(3, "Drei");
     dictionary.put(7, "Vier");
     dictionary.put(11, "Elf");
@@ -75,7 +75,7 @@ public abstract class MapTest {
   void testSize2() {
     Map<Integer, String> map = createMap();
     
-    map.put(5, "Fünf");
+    map.put(5, "Fuenf");
     map.put(3, "Drei");
     map.put(1, "Eins");
     map.put(9, "Neun");
@@ -94,22 +94,22 @@ public abstract class MapTest {
   @Test
   void testPut2() {
     commonTestMap.put(9, "Neun");
-    commonTestMap.put(5, "Fünf");
+    commonTestMap.put(5, "Fuenf");
     assertEquals(9, commonTestMap.size());    
     assertEquals("Neun", commonTestMap.get(9));
-    assertEquals("Fünf", commonTestMap.get(5));
+    assertEquals("Fuenf", commonTestMap.get(5));
   }
   
   @Test
   void testPut3() {
     commonTestMap.put(9, "Neun");
-    commonTestMap.put(5, "Fünf");
+    commonTestMap.put(5, "Fuenf");
     commonTestMap.put(2, "Two");
     commonTestMap.put(9, "Neun");
     
     assertEquals(9, commonTestMap.size());    
     assertEquals("Neun", commonTestMap.get(9));
-    assertEquals("Fünf", commonTestMap.get(5));
+    assertEquals("Fuenf", commonTestMap.get(5));
   }
   
   @Test
