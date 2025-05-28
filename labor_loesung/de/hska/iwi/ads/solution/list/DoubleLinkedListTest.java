@@ -1,11 +1,8 @@
 package de.hska.iwi.ads.solution.list;
 
-import de.hska.iwi.ads.dictionary.AbstractDoubleLinkedList;
-import de.hska.iwi.ads.dictionary.MapTest;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import java.util.Iterator;
-import java.util.Map;
+
 
 
 public class DoubleLinkedListTest {
