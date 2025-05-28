@@ -15,15 +15,17 @@ public class BinarySearch<E extends Comparable<E>> implements Search<E> {
         if (key.compareTo(a[left]) < 0) {
             index = left - 1;
         }
-        if (key.compareTo(a[right]) > 0) {
+        else if (key.compareTo(a[right]) > 0) {
             index = right + 1;
+        }
+        else {
+            index = binarySearch(a, key, left, right);
         }
         //Der 3.Fall wird schon von der Methode binarySearch abgehandelt, dadurch dass man left zurückgibt.
         /*if (a[left].compareTo(key) <= 0 && key.compareTo(a[right]) <= 0) {
 
         }*/
 
-        index = binarySearch(a, key, left, right);
 
         return index;
     }
