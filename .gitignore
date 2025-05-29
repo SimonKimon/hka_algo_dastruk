@@ -1,0 +1,18 @@
+# Java-spezifisch
+*.class
+*.log
+*.jar
+
+# Eclipse / IntelliJ
+.idea/
+*.iml
+target/
+bin/
+
+# Betriebssysteme
+.DS_Store     # macOS
+Thumbs.db     # Windows
+
+# temporäre Dateien
+*.swp
+*.tmp
