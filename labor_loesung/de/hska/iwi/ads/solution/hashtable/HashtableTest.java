@@ -1,6 +1,5 @@
 package de.hska.iwi.ads.solution.hashtable;
 
-import de.hska.iwi.ads.dictionary.AbstractDictionary;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
